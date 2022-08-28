@@ -1,0 +1,43 @@
+[2022-07-02T11:17:17.089] [WARN] default - Error al validar el esquema de products - Error: ValidationError: "stock" is required
+[2022-07-02T11:18:06.261] [WARN] default - Error al validar el esquema de products - Error: ValidationError: "description" is not allowed
+[2022-07-09T13:05:32.774] [WARN] default - No existe la ruta POST /failLogin
+[2022-08-28T16:43:47.724] [WARN] default - Error al validar el esquema de usuarios - Error: ValidationError: "password" is required
+[2022-08-28T16:44:55.536] [ERROR] default - CustomError {
+  estado: 401,
+  descripcion: 'Error al loguearse',
+  detalles: CustomError {
+    estado: 404,
+    descripcion: 'El Documento {"email":"alyson.fritsch123@ethereal.email"} no fue encontrado en la coleccion users',
+    detalles: undefined
+  }
+}
+[2022-08-28T16:47:35.083] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'El Documento {"id":"DZYJG5Z9YZY0W62WUWT0AGd"} no fue encontrado en la coleccion products',
+  detalles: undefined
+}
+[2022-08-28T16:48:49.516] [WARN] default - El usuario alyson.fritsch@ethereal.email no tiene permisos de administrador y quizo acceder a una ruta no autorizada.
+[2022-08-28T16:49:32.992] [WARN] default - Error al validar el esquema de products - Error: ValidationError: "price" is required
+[2022-08-28T16:50:23.738] [WARN] default - El usuario alyson.fritsch@ethereal.email no tiene permisos de administrador y quizo acceder a una ruta no autorizada.
+[2022-08-28T16:50:29.274] [WARN] default - El usuario alyson.fritsch@ethereal.email no tiene permisos de administrador y quizo acceder a una ruta no autorizada.
+[2022-08-28T16:50:55.205] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'El Documento {"id":"DZYJG5Z9YZY0W62WUWT0AGf"} no fue encontrado en la coleccion products',
+  detalles: undefined
+}
+[2022-08-28T16:51:44.111] [WARN] default - El usuario alyson.fritsch@ethereal.email no tiene permisos de administrador y quizo acceder a una ruta no autorizada.
+[2022-08-28T16:51:54.696] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'El Documento {"id":"KFGCCBK7GK47SKHQAKZWGRSSS"} no fue encontrado en la coleccion products',
+  detalles: undefined
+}
+[2022-08-28T16:51:59.162] [ERROR] default - CustomError {
+  estado: 200,
+  descripcion: 'Se ha borrado el Producto {"id":"KFGCCBK7GK47SKHQAKZWGR"} de la BD',
+  detalles: undefined
+}
+[2022-08-28T16:58:14.376] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'El Documento {"id":"DZYJG5Z9YZY0W62WUWT0AGC"} no fue encontrado en la coleccion products',
+  detalles: undefined
+}

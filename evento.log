@@ -1,0 +1,71 @@
+[2022-08-28T16:31:49.188] [INFO] default - Http server listening on port 8080 - PID WORKER 16096 - MODO undefined
+[2022-08-28T16:31:49.340] [INFO] default - Se conecto al socket on connection
+[2022-08-28T16:31:50.686] [INFO] default - Server is ready to take our messages.
+[2022-08-28T16:43:47.724] [WARN] default - Error al validar el esquema de usuarios - Error: ValidationError: "password" is required
+[2022-08-28T16:44:00.250] [INFO] default - Registro de Usuario Ok 
+[2022-08-28T16:44:42.764] [INFO] default - PassportController.js - passport.use --> login
+[2022-08-28T16:44:42.852] [INFO] default - UsuariosController.js: successLogin
+[2022-08-28T16:44:55.495] [INFO] default - PassportController.js - passport.use --> login
+[2022-08-28T16:44:55.536] [ERROR] default - CustomError {
+  estado: 401,
+  descripcion: 'Error al loguearse',
+  detalles: CustomError {
+    estado: 404,
+    descripcion: 'El Documento {"email":"alyson.fritsch123@ethereal.email"} no fue encontrado en la coleccion users',
+    detalles: undefined
+  }
+}
+[2022-08-28T16:44:55.542] [INFO] default - UsuariosController.js: failLogin
+[2022-08-28T16:45:03.092] [INFO] default - PassportController.js - passport.use --> login
+[2022-08-28T16:45:03.182] [INFO] default - UsuariosController.js: failLogin
+[2022-08-28T16:45:09.262] [INFO] default - UsuariosController.js: failLogin
+[2022-08-28T16:45:18.617] [INFO] default - PassportController.js - passport.use --> login
+[2022-08-28T16:45:18.721] [INFO] default - UsuariosController.js: successLogin
+[2022-08-28T16:47:35.083] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'El Documento {"id":"DZYJG5Z9YZY0W62WUWT0AGd"} no fue encontrado en la coleccion products',
+  detalles: undefined
+}
+[2022-08-28T16:48:49.516] [INFO] default - UsuariosController.js: esAdministrador
+[2022-08-28T16:48:49.516] [WARN] default - El usuario alyson.fritsch@ethereal.email no tiene permisos de administrador y quizo acceder a una ruta no autorizada.
+[2022-08-28T16:49:21.501] [INFO] default - UsuariosController.js: esAdministrador
+[2022-08-28T16:49:32.992] [INFO] default - UsuariosController.js: esAdministrador
+[2022-08-28T16:49:32.992] [WARN] default - Error al validar el esquema de products - Error: ValidationError: "price" is required
+[2022-08-28T16:49:45.789] [INFO] default - UsuariosController.js: esAdministrador
+[2022-08-28T16:50:23.738] [INFO] default - UsuariosController.js: esAdministrador
+[2022-08-28T16:50:23.738] [WARN] default - El usuario alyson.fritsch@ethereal.email no tiene permisos de administrador y quizo acceder a una ruta no autorizada.
+[2022-08-28T16:50:29.274] [INFO] default - UsuariosController.js: esAdministrador
+[2022-08-28T16:50:29.274] [WARN] default - El usuario alyson.fritsch@ethereal.email no tiene permisos de administrador y quizo acceder a una ruta no autorizada.
+[2022-08-28T16:50:40.512] [INFO] default - UsuariosController.js: esAdministrador
+[2022-08-28T16:50:55.116] [INFO] default - UsuariosController.js: esAdministrador
+[2022-08-28T16:50:55.205] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'El Documento {"id":"DZYJG5Z9YZY0W62WUWT0AGf"} no fue encontrado en la coleccion products',
+  detalles: undefined
+}
+[2022-08-28T16:51:06.724] [INFO] default - UsuariosController.js: esAdministrador
+[2022-08-28T16:51:44.111] [INFO] default - UsuariosController.js: esAdministrador
+[2022-08-28T16:51:44.111] [WARN] default - El usuario alyson.fritsch@ethereal.email no tiene permisos de administrador y quizo acceder a una ruta no autorizada.
+[2022-08-28T16:51:54.655] [INFO] default - UsuariosController.js: esAdministrador
+[2022-08-28T16:51:54.696] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'El Documento {"id":"KFGCCBK7GK47SKHQAKZWGRSSS"} no fue encontrado en la coleccion products',
+  detalles: undefined
+}
+[2022-08-28T16:51:59.117] [INFO] default - UsuariosController.js: esAdministrador
+[2022-08-28T16:51:59.162] [ERROR] default - CustomError {
+  estado: 200,
+  descripcion: 'Se ha borrado el Producto {"id":"KFGCCBK7GK47SKHQAKZWGR"} de la BD',
+  detalles: undefined
+}
+[2022-08-28T16:58:14.376] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'El Documento {"id":"DZYJG5Z9YZY0W62WUWT0AGC"} no fue encontrado en la coleccion products',
+  detalles: undefined
+}
+[2022-08-28T17:03:22.269] [INFO] default - Http server listening on port 8080 - PID WORKER 3468 - MODO undefined
+[2022-08-28T17:03:22.345] [INFO] default - Se conecto al socket on connection
+[2022-08-28T17:03:23.590] [INFO] default - Server is ready to take our messages.
+[2022-08-28T17:06:44.169] [INFO] default - Enviando email con la notificación del nuevo pedido ...
+[2022-08-28T17:06:47.477] [INFO] default - Enviando email con la notificación del nuevo pedido ...
+

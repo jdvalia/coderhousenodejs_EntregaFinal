@@ -1,0 +1,45 @@
+[2022-07-02T11:15:02.950] [ERROR] default - CustomError {
+  estado: 401,
+  descripcion: 'Error al loguearse',
+  detalles: CustomError {
+    estado: 404,
+    descripcion: 'Este Documento no fue encontrado en esta coleccion undefined con estos datos {"email":"peter"}',
+    detalles: undefined
+  }
+}
+[2022-07-09T13:28:27.713] [ERROR] default - Falló al validar si el email ya existe en la Base de datos - error:[object Object]
+[2022-07-09T13:28:27.759] [ERROR] default - Falló al validar si el username ya existe en la Base de datos - error:[object Object]
+[2022-08-28T16:44:55.536] [ERROR] default - CustomError {
+  estado: 401,
+  descripcion: 'Error al loguearse',
+  detalles: CustomError {
+    estado: 404,
+    descripcion: 'El Documento {"email":"alyson.fritsch123@ethereal.email"} no fue encontrado en la coleccion users',
+    detalles: undefined
+  }
+}
+[2022-08-28T16:47:35.083] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'El Documento {"id":"DZYJG5Z9YZY0W62WUWT0AGd"} no fue encontrado en la coleccion products',
+  detalles: undefined
+}
+[2022-08-28T16:50:55.205] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'El Documento {"id":"DZYJG5Z9YZY0W62WUWT0AGf"} no fue encontrado en la coleccion products',
+  detalles: undefined
+}
+[2022-08-28T16:51:54.696] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'El Documento {"id":"KFGCCBK7GK47SKHQAKZWGRSSS"} no fue encontrado en la coleccion products',
+  detalles: undefined
+}
+[2022-08-28T16:51:59.162] [ERROR] default - CustomError {
+  estado: 200,
+  descripcion: 'Se ha borrado el Producto {"id":"KFGCCBK7GK47SKHQAKZWGR"} de la BD',
+  detalles: undefined
+}
+[2022-08-28T16:58:14.376] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'El Documento {"id":"DZYJG5Z9YZY0W62WUWT0AGC"} no fue encontrado en la coleccion products',
+  detalles: undefined
+}

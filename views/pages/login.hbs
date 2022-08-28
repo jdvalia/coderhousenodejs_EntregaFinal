@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 px-4">
+            <a class="navbar-brand" href="#"></a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto p-12">
+                    <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/chat">Chat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/infoServer">Info Servidor</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+
+    <form method="post" action="/login" class="container mt-5">
+        <div class="m-1  row justify-content-center">
+            <div class="bg-light shadow p-5 m-3 rounded col-lg-4 col-md-6 col-sm-8 ">
+                <h2 class="mt-1 text-center font__bienvenido">Ingrese sus datos</h2>
+                <div class="row justify-content-center">
+                    <input type="text" class="m-3 form-control" name="username" placeholder="Usuario" required
+                        autofocus="" />
+                    <input type="password" class="m-3 form-control" name="password" required placeholder="Password" />
+                    <button class="m-1 btn btn-lg btn-outline-primary btn-block" type="submit">Login</button>
+                </div>
+                <span class="badge bg-warning text-dark">{{error}}</span>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>

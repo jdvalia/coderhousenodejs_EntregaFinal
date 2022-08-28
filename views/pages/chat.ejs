@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curso Backend - Entrega Final</title>
+
+    <!-- <link href="/styles/styles.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/ejs@3.1.6/ejs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+
+    <STYLE type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 70%;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6rem;
+        }
+
+        @media (min-width: 426px) {
+            .main__login fieldset {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .main__login fieldset {
+                width: 40%;
+            }
+        }
+    </STYLE>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/mainChat.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 px-4">
+            <a class="navbar-brand" href="#"></a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto p-12">
+                    <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/chat">Chat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/infoServer">Info Servidor</a> </li>
+                </ul>
+            </div>
+        </nav>
+        <br><br>
+    </header>
+
+    <!-- Formulario para ingresar nuevos mensajes -->
+
+    <div class="container">
+        <br>
+        <h3>Ingrese un nuevo mensaje</h3>
+
+        <form onsubmit="return agregarMensaje(this)">
+            <!-- email -->
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">E-mail: </span>
+                </div>
+                <input type="email" id="email" name="email" class="form-control" aria-label="Small"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Your Email" value="<%= email %>" readonly>
+            </div>
+            <!--mensaje a enviar-->
+            <div class="input-group input-group-sm mb-3">
+                <input type="text" id="mensaje" name="mensaje" class="form-control" ria-label="msj:"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Ingresa un mensaje..." required>
+            </div>
+            <!--boton para enviar mensaje nuevo -->
+            <div class="form-group">
+                <input type="submit" value="Enviar" class="btn btn-success">
+            </div>
+        </form>
+
+    </div>
+
+    <!-- Listado de mensajes de chat -->
+    <div class="container" id="listadoDeMensajes"></div>
+
+</body>
+
+</html>
